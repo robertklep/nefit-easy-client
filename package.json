@@ -2,7 +2,7 @@
   "name": "nefit-easy-client",
   "version": "0.0.0",
   "description": "Nefit Easy Client",
-  "main": "lib/index.js",
+  "main": "index.js",
   "author": "Robert Klep <robert@klep.name>",
   "license": "MIT",
   "repository": "robertklep/nefit-easy-client",

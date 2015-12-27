@@ -1,5 +1,5 @@
 const Promise         = require('bluebird');
-const NefitEasyClient = require('../lib');
+const NefitEasyClient = require('..');
 
 // Instantiate client
 const client = NefitEasyClient({
