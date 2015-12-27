@@ -14,7 +14,7 @@ $ npm install
 
 ### Demo
 
-There's an example script provided that will show the current temperature as detected by the Easy, as well as the temperature to which it's set.
+There's an example script provided that will show temperatures (current, set and outside) and system pressure.
 
 You need to provide the following information before the client can connect to the backend:
 
@@ -28,8 +28,10 @@ The example script will read these values from environment variables.
 $ export NEFIT_SERIAL_NUMBER=...
 $ export NEFIT_ACCESS_KEY=...
 $ export NEFIT_PASSWORD=...
-$ node example/current-temperatures.js
-Temperature is set to 17.2°C, current is 17.5°C.
+$ node example/current-status.js
+Temperature is set to 16.8°C, current is 16.5°C.
+Outside temperature is 10°C.
+System pressure is 1.4 bar.
 ```
 
 ### Synopsis
