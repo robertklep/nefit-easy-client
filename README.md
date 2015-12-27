@@ -44,3 +44,104 @@ System pressure is 1.4 bar.
 ### Disclaimer
 
 The implementation of this library is based on reverse-engineering the communications between the apps and the backend, plus various other bits and pieces of information. It is _not_ based on any official information given out by Nefit/Bosch, and therefore there are no guarantees whatsoever regarding the safety of your devices and/or its settings, or the accuracy of the information provided.
+
+## API
+
+### General information
+
+All (asynchronous) methods return a ([bluebird](http://bluebirdjs.com/)) promise that resolves to a plain object.
+
+#### Constructor
+
+```
+const NefitEasyClient = require('nefit-easy-client');
+const client          = NefitEasyClient({
+  serialNumber : NEFIT_SERIAL_NUMBER,
+  accessKey    : NEFIT_ACCESS_KEY,
+  password     : NEFIT_PASSWORD,
+});
+```
+
+#### System status
+
+`client.status() : Promise`
+
+Example:
+```
+{
+  "user mode"                   : "clock",
+  "in house status"             : "ok",
+  "boiler indicator"            : "No",
+  "control"                     : "room",
+  "temp override duration"      : 0,
+  "current switchpoint"         : "0",
+  "ps active"                   : false,
+  "fp active"                   : false,
+  "temp override"               : true,
+  "holiday mode"                : false,
+  "boiler block"                : null,
+  "boiler lock"                 : null,
+  "boiler maintainance"         : null,
+  "temp setpoint"               : 17.5,
+  "temp override temp setpoint" : 17.5,
+  "temp manual setpoint"        : 17.5,
+  "hed enabled"                 : null,
+  "hed device at home"          : null,
+  "outdoor temp"                : 13,
+  "outdoor source type"         : "virtual"
+}
+```
+
+#### System pressure
+
+`client.pressure() : Promise`
+
+Example:
+```
+{
+  "pressure" : 1.4,
+  "unit"     : "bar"
+}
+```
+
+#### System location
+
+`client.location() : Promise`
+
+Example:
+```
+{
+  "lat" : 52.2425755,
+  "lng" : 6.1792625
+}
+```
+
+#### Program data (active program and switchpoint data)
+
+`client.program() : Promise`
+
+Example:
+```
+{
+  "active"   : 1,       // Currently active program
+  "program1" : [
+    {
+      "dow"  : 0,       // 0 = Sunday, 6 = Saturday
+      "time" : "07:00",
+      "temp" : 20
+    },
+    {
+      "dow"  : 0,
+      "time" : "23:00",
+      "temp" : 16
+    },
+    ...
+  ],
+  "program2" : [
+    ...
+  ]
+}
+```
+
+#### `client.get(URI : String) : Promise`
+#### `client.send(MESSAGE : { String, Stanza }) : void`
