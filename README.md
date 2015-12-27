@@ -4,6 +4,13 @@ Node.js client library for the [Nefit Easy](http://www.nefit.nl/consument/servic
 
 Work in progress!
 
+### Synopsis
+
+The Nefit Easy™ smart thermostat is sold in The Netherlands by [Nefit](http://www.welkombijnefit.nl/nl), a company owned by [Robert Bosch GmbH](http://www.bosch.com/).
+
+The Easy can be controlled through apps for Android and iOS, which communicate with a Bosch-hosted backend using the [XMPP](https://en.wikipedia.org/wiki/XMPP) protocol. This library aims to implement the communication protocol used between the apps and the backend.
+
+
 ### Installation
 
 ``` javascript
@@ -33,12 +40,6 @@ Temperature is set to 16.8°C, current is 16.5°C.
 Outside temperature is 10°C.
 System pressure is 1.4 bar.
 ```
-
-### Synopsis
-
-The Nefit Easy™ smart thermostat is sold in The Netherlands by [Nefit](http://www.welkombijnefit.nl/nl), a company owned by [Robert Bosch GmbH](http://www.bosch.com/).
-
-The Easy can be controlled through apps for Android and iOS, which communicate with a Bosch-hosted backend using the [XMPP](https://en.wikipedia.org/wiki/XMPP) protocol. This library aims to implement the communication protocol used between the apps and the backend.
 
 ### Disclaimer
 
