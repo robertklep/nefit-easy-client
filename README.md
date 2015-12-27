@@ -70,6 +70,7 @@ Example:
 ```
 {
   "user mode"                   : "clock",
+  "in house temp"               : 18.3,
   "in house status"             : "ok",
   "boiler indicator"            : "No",
   "control"                     : "room",
