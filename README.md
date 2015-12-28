@@ -51,6 +51,12 @@ The implementation of this library is based on reverse-engineering the communica
 
 All (asynchronous) methods return a ([bluebird](http://bluebirdjs.com/)) promise that resolves to a plain object.
 
+`nefit-easy-client` uses [`debug`](https://github.com/visionmedia/debug) to provide some debug logging:
+
+```
+$ env DEBUG=nefit-easy-client node your-app.js
+```
+
 #### Constructor
 
 ```
