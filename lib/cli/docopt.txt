@@ -4,6 +4,7 @@ easy – Nefit Easy™ client
 Usage:
   easy [options] status
   easy [options] pressure
+  easy [options] get <uri>
 
 Options:
   -h --help        Show this screen
