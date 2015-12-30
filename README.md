@@ -18,7 +18,7 @@ The Easy can be controlled through apps for Android and iOS, which communicate w
 $ npm install robertklep/nefit-easy-client [-g]
 ```
 
-Use `-g/--global` if you want the CLI tool to be installed in a well-known bin directory.
+Use `-g/--global` if you want the CLI tool (`easy`) to be installed in a well-known bin directory.
 
 #### Checkout the repository (in case you want to run the example code)
 
