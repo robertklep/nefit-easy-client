@@ -10,8 +10,17 @@ The Nefit Easy™ smart thermostat is sold in The Netherlands by [Nefit](http://
 
 The Easy can be controlled through apps for Android and iOS, which communicate with a Bosch-hosted backend using the [XMPP](https://en.wikipedia.org/wiki/XMPP) protocol. This library aims to implement the communication protocol used between the apps and the backend.
 
-
 ### Installation
+
+#### Install it as a Node module
+
+``` javascript
+$ npm install robertklep/nefit-easy-client [-g]
+```
+
+Use `-g/--global` if you want the CLI tool to be installed in a well-known bin directory.
+
+#### Checkout the repository (in case you want to run the example code)
 
 ``` javascript
 $ git clone https://github.com/robertklep/nefit-easy-client
