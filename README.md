@@ -12,6 +12,8 @@ The Easy can be controlled through apps for Android and iOS, which communicate w
 
 ### Installation
 
+_This library requires Node.js 4.0.0 or later!_
+
 #### Install it as a Node module
 
 ``` javascript
