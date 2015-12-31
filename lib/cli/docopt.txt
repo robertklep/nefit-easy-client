@@ -14,10 +14,10 @@ Usage:
   easy [options] decrypt [--type=<type>] <base64>
 
 Options:
-  -h --help         Show this screen
-  -v --version      Show version
-  -V --verbose      Be more verbose
-  -s --serial       Nefit Easy™ serial number
-  -a --access-key   Nefit Easy™ access key
-  -p --password     Nefit Easy™ password
-  --type=<type>     Message type ('chat', 'alarm', 'email') [default: chat]
+  -h --help                   Show this screen
+  -v --version                Show version
+  -V --verbose                Be more verbose
+  -s --serial=SERIAL          Nefit Easy™ serial number
+  -a --access-key=ACCESS_KEY  Nefit Easy™ access key
+  -p --password=PASSWORD      Nefit Easy™ password
+  --type=<type>               Message type ('chat', 'alarm', 'email') [default: chat]
