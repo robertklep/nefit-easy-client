@@ -5,11 +5,13 @@ Usage:
   easy [options] status
   easy [options] pressure
   easy [options] get <uri>
+  easy [options] decrypt [--type=<type>] <base64>
 
 Options:
-  -h --help        Show this screen
-  -v --version     Show version
-  -V --verbose     Be more verbose
-  -s --serial      Nefit Easy™ serial number
-  -a --access-key  Nefit Easy™ access key
-  -p --password    Nefit Easy™ password
+  -h --help         Show this screen
+  -v --version      Show version
+  -V --verbose      Be more verbose
+  -s --serial       Nefit Easy™ serial number
+  -a --access-key   Nefit Easy™ access key
+  -p --password     Nefit Easy™ password
+  --type=<type>     Message type ('chat', 'alarm', 'email') [default: chat]
