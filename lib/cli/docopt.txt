@@ -5,6 +5,7 @@ Usage:
   easy [options] status
   easy [options] pressure
   easy [options] get <uri>
+  easy [options] put <uri> <data>
   easy [options] decrypt [--type=<type>] <base64>
 
 Options:
