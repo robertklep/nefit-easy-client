@@ -6,6 +6,7 @@ Usage:
   easy [options] pressure
   easy [options] get <uri>
   easy [options] put <uri> <data>
+  easy [options] set temperature <value>
   easy [options] decrypt [--type=<type>] <base64>
 
 Options:
