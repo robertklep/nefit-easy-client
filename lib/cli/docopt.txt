@@ -4,9 +4,13 @@ easy – Nefit Easy™ client
 Usage:
   easy [options] status
   easy [options] pressure
+  easy [options] location
+  easy [options] active-program
+  easy [options] program-data
   easy [options] get <uri>
   easy [options] put <uri> <data>
   easy [options] set temperature <value>
+  easy [options] set active-program <value>
   easy [options] decrypt [--type=<type>] <base64>
 
 Options:
