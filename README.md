@@ -20,7 +20,9 @@ _This library requires Node.js 4.0.0 or later!_
 $ npm install robertklep/nefit-easy-client [-g]
 ```
 
-Use `-g/--global` if you want the CLI tool (`easy`) to be installed in a well-known bin directory.
+Use `-g/--global` if you want the CLI tool (`easy`) to be installed in a well-known bin directory. The CLI tool can be used to get/set parameters.
+
+Run `easy --help` to get a list of supported options.
 
 #### Checkout the repository (in case you want to run the example code)
 
@@ -161,5 +163,47 @@ Example:
 }
 ```
 
-#### `client.get(URI : String) : Promise`
-#### `client.send(MESSAGE : { String, Stanza }) : void`
+#### Low-level `GET` operation
+
+`client.get(uri : String) : Promise`
+
+This allows retrieving specific URI's from the backend.
+
+A non-exhaustive list of URI's:
+
+```
+/dhwCircuits/dhwA/dhwCurrentSwitchpoint
+/dhwCircuits/dhwA/dhwNextSwitchpoint
+/dhwCircuits/dhwA/dhwOperationMode
+/dhwCircuits/dhwA/dhwOperationType
+/dhwCircuits/dhwA/hotWaterSystem
+/dhwCircuits/dhwA/thermaldesinfect/state
+/ecus/rrc/pm/refillneeded/status
+/ecus/rrc/temperaturestep
+/ecus/rrc/userprogram/activeprogram
+/ecus/rrc/userprogram/program1
+/ecus/rrc/userprogram/program2
+/ecus/rrc/weatherDependent/forcedSwitchedOff
+/gateway/brandID
+/gateway/remote/servicestate
+/gateway/update/strategy
+/gateway/versionFirmware
+/heatingCircuits/hc1/control
+/heatingCircuits/hc1/manualTempOverride/status
+/heatingCircuits/hc1/manualTempOverride/temperature
+/heatingCircuits/hc1/temperatureRoomManual
+/heatingCircuits/hc1/usermode
+/system/appliance/cm/type
+/system/appliance/cm/version
+/system/appliance/systemPressure
+/system/appliance/type
+/system/location/latitude
+/system/location/longitude
+/system/sensors/temperatures/outdoor_t1
+```
+
+#### Low-level `PUT` operation
+
+`client.put(uri : String, data) : Promise`
+
+This allows writing values to specific URI's.
