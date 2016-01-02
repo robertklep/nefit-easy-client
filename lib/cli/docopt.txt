@@ -17,6 +17,7 @@ Options:
   -h --help                   Show this screen
   -v --version                Show version
   -V --verbose                Be more verbose
+  --pretty                    Pretty-print JSON output
   -s --serial=SERIAL          Nefit Easy™ serial number
   -a --access-key=ACCESS_KEY  Nefit Easy™ access key
   -p --password=PASSWORD      Nefit Easy™ password
