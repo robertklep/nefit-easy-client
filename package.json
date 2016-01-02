@@ -1,6 +1,6 @@
 {
   "name": "nefit-easy-client",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Nefit Easy Client",
   "bin": { "easy" : "./bin/easy" },
   "main": "index.js",
