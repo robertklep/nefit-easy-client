@@ -1,6 +1,8 @@
-## Nefit Easy™ client library
+## Nefit Easy™ client library <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9ZUNREGDSZ45L"><img style="vertical-align:middle" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif"></a>
 
 Node.js client library for the [Nefit Easy](http://www.nefit.nl/consument/service/easy/easy) smart thermostat.
+
+[Frequently Asked Questions](https://github.com/robertklep/nefit-easy-client/wiki)
 
 Work in progress!
 
