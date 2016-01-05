@@ -2,7 +2,9 @@
   "name": "nefit-easy-client",
   "version": "1.0.2",
   "description": "Nefit Easy Client",
-  "bin": { "easy" : "./bin/easy" },
+  "bin": {
+    "easy": "./bin/easy"
+  },
   "main": "index.js",
   "author": "Robert Klep <robert@klep.name>",
   "license": "MIT",
@@ -11,11 +13,14 @@
     "node": ">=4.0"
   },
   "dependencies": {
+    "accum": "^0.3.6",
     "bluebird": "^3.1.1",
+    "body": "^5.1.0",
     "debug": "^2.2.0",
     "docopt": "^0.6.2",
     "http-string-parser": "0.0.5",
     "node-xmpp-client": "^3.0.0",
-    "promise-queue": "^2.2.0"
+    "promise-queue": "^2.2.0",
+    "send-data": "^8.0.0"
   }
 }
