@@ -19,9 +19,9 @@ _This library requires Node.js 4.0.0 or later!_
 #### Install it as a Node module
 
 ``` javascript
-$ npm install robertklep/nefit-easy-client
+$ npm install nefit-easy-client
 # Or, alternatively:
-$ npm install robertklep/nefit-easy-client -g
+$ npm install nefit-easy-client -g
 ```
 
 Use `-g/--global` if you want the CLI tool (`easy`) to be installed in a well-known bin directory. The CLI tool can be used to get/set parameters.
