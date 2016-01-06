@@ -40,6 +40,37 @@ $ npm install
 
 * Pepijn Goossens' [Node-RED node](https://github.com/pepijng/node-red-contrib-nefit-easy)
 
+### Using the HTTP server
+
+The `easy` CLI tool provides a built-in HTTP server that acts as a bridge between HTTP and XMPP.
+
+To run it (see `easy --help` for more options):
+
+```
+$ easy serve
+```
+
+By default, the server will be accessible through `http://127.0.0.1:3000/`.
+
+The server isn't meant to be opened in a browser. Its intended use is to be called using tools like `curl` or `httpie`, or from other programs/scripts, through HTTP calls. The following examples will use `curl`.
+
+The HTTP server provides two actions:
+
+* retrieving an [endpoint](https://github.com/robertklep/nefit-easy-client/wiki/List-of-endpoints);
+* writing data to an endpoint;
+
+To retrieve an endpoint (for example, `/ecus/rrc/uiStatus`):
+```
+$ curl http://127.0.0.1:3000/bridge/ecus/rrc/uiStatus
+```
+
+To write data to an endpoint:
+```
+$ curl -XPOST http://127.0.0.1:3000/bridge/heatingCircuits/hc1/temperatureRoomManual -d '{"value":20}'
+```
+
+For `POST` requests, the data should be a [valid JSON string](http://jsonlint.com/). There is no input validation.
+
 ### Demo
 
 There's an example script provided that will show temperatures (current, set and outside) and system pressure.
