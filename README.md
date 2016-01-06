@@ -36,6 +36,10 @@ $ cd nefit-easy-client
 $ npm install
 ```
 
+### Projects using this library
+
+* Pepijn Goossens' [Node-RED node](https://github.com/pepijng/node-red-contrib-nefit-easy)
+
 ### Demo
 
 There's an example script provided that will show temperatures (current, set and outside) and system pressure.
