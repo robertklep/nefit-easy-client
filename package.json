@@ -15,12 +15,14 @@
   "dependencies": {
     "accum": "^0.3.6",
     "bluebird": "^3.1.1",
-    "body": "^5.1.0",
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
     "debug": "^2.2.0",
     "docopt": "^0.6.2",
+    "express": "^4.13.3",
     "http-string-parser": "0.0.5",
+    "morgan": "^1.6.1",
     "node-xmpp-client": "^3.0.0",
-    "promise-queue": "^2.2.0",
-    "send-data": "^8.0.0"
+    "promise-queue": "^2.2.0"
   }
 }

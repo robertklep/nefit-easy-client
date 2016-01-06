@@ -66,7 +66,7 @@ $ curl http://127.0.0.1:3000/bridge/ecus/rrc/uiStatus
 
 To write data to an endpoint:
 ```
-$ curl -XPOST http://127.0.0.1:3000/bridge/heatingCircuits/hc1/temperatureRoomManual -d '{"value":20}'
+$ curl -XPOST http://127.0.0.1:3000/bridge/heatingCircuits/hc1/temperatureRoomManual -d '{"value":20}' -H 'Content-Type: application/json'
 ```
 
 For `POST` requests, the data should be a [valid JSON string](http://jsonlint.com/). There is no input validation.
